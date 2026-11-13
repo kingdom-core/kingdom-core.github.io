@@ -95,6 +95,7 @@ nav {
 .stat + .stat { padding-left: 28px; border-left: 1px solid var(--line); }
 .stat b { display: block; font-weight: 500; font-size: clamp(2.4rem, 5vw, 4rem); letter-spacing: -0.04em; line-height: 1; }
 .stat span { display: block; margin-top: 10px; color: var(--muted); }
+.stat b .stat-br { display: block; margin-top: 0; color: inherit; }
 
 /* ---------- Features ---------- */
 .section-top { display: flex; justify-content: space-between; align-items: flex-end; gap: 30px; flex-wrap: wrap; margin-bottom: 56px; }
@@ -206,6 +207,7 @@ footer { padding: 30px 0 34px; border-top: 1px solid var(--line); }
 @media (max-width: 560px) {
   .stats { grid-template-columns: 1fr; }
   .stat + .stat { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); margin-top: 22px; }
+  .stat b .stat-br { display: inline; }
   .foot { grid-template-columns: 1fr; }
   .cta { padding: 60px 20px; border-radius: 24px; }
 }
